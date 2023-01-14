@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+#wrapper{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header__title{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+.content__title{
+    font-size: 24px;
+    margin-bottom: 2rem;
+    color: orange;
+}
+.content__article{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.content__title:nth-of-type(2){
+    color: green;
+}
+
+/* Cú pháp viết CSS */
+/* **
+ selector {
+  property: value
+ }
+
+ ..property: color,background-color, text-transform
+ .. value này sẽ đi theo properpty, ví dụ: color: red, text-transform: uppercase
+*/
+
+/* Cách chọn selector toàn cục cú pháp là
+*{
+ property: value
+}
+*/
+/* button{
+  background-color: aquamarine;
+} */
+/* span{
+  color: orange;
+} */
+/* .main-menu a{  
+  color: red;
+} */
+/* chọn tất cả a là con cháU của main-menu */
+/* chọn tất cả a là con của li và con của ul có class main-menu */
+.main-menu>li>a{  
+  color: red;
+}
+
+/* Chọn tất cả thẻ a là con "TRỰC TIẾP" của li và li là con "TRỰC TIẾP" của ul có class là main-menu */
